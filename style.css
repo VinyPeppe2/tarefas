@@ -1,0 +1,49 @@
+body{
+    background-color: beige;
+}
+
+#groupTarefas{
+    justify-items: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "Arial Black", Arial, sans-serif, Helvetica;
+    font-size: 38px;
+}
+
+#entryList{
+    height: 20px;
+    width: 200px;
+}
+
+#buttonList{
+    height: 25px;
+}
+
+#buttonList:hover{
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.tarefas{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    width: 500px;
+    height: 34px;
+    border: 0.3px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#listTarefa{
+    margin-top: 10px;
+}
+
+.lixeira{
+    display: block;
+    margin-left: auto;
+}
