@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Lista de Tarefas📚</title>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
     <h1>Lista de Tarefas</h1>
-    <img onclick="n" src="" alt="">
-    <div id="groupTarefas">
-        <input id="entryList" placeholder="Digite a nova tarefa">
-        <button id="buttonList">Adicionar</button>
-    <div id="listTarefa"></div>
+
+    <div class="input-group">
+      <input type="text" id="entryList" placeholder="Digite a nova tarefa">
+      <button id="buttonList">Adicionar</button>
     </div>
-    <script src="main.js">
-    </script>
+
+    <div class="resumo">
+      <p>Total de Tarefas: <span id="totalTarefas">0</span></p>
+      <p>Concluídas: <span id="tarefasConcluidas">0</span></p>
+    </div>
+
+    <div id="listTarefa"></div>
+
+    <!-- Barra de progresso -->
+    <div class="progresso">
+      <label>Progresso:</label>
+      <div class="barra">
+        <div id="barraProgresso"></div>
+      </div>
+    </div>
+
+    <!-- Botão de alternar modo escuro -->
+    <button id="toggleDarkMode">Alternar Modo Escuro 🌙</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
